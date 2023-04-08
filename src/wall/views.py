@@ -6,7 +6,6 @@ from .models import Post, Comment
 from .serializers import (PostSerializer, ListPostSerializer, CreateCommentSerializer)
 
 
-
 class PostListView(generics.ListAPIView):
     serializer_class = ListPostSerializer
 
