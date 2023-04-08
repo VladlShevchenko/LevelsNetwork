@@ -17,9 +17,6 @@ class GetUserNetSerializer(serializers.ModelSerializer):
 
 
 class GetUserNetPublicSerializer(serializers.ModelSerializer):
-    """ Вывод публичной инфы о user
-    """
-
     class Meta:
         model = UserNet
         exclude = (
@@ -36,8 +33,6 @@ class GetUserNetPublicSerializer(serializers.ModelSerializer):
 
 
 class UserByFollowerSerializer(serializers.ModelSerializer):
-    """ Сериализация для подписчиков
-    """
     avatar = serializers.ImageField(read_only=True)
 
     class Meta:
