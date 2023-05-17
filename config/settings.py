@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'rest_framework',
     'djoser',
     'src.profiles',
+    'src.followers',
+    'src.feed'
 ]
 
 MIDDLEWARE = [
