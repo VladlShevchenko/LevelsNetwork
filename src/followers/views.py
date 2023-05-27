@@ -34,4 +34,3 @@ class FollowerView(views.APIView):
             return response.Response(status=404)
         sub.delete()
         return response.Response(status=204)
-
