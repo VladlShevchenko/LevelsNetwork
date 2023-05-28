@@ -7,6 +7,7 @@ from .serializers import GetUserNetSerializer, GetUserNetPublicSerializer
 class UserNetPublicView(ModelViewSet):
     queryset = UserNet.objects.all()
     serializer_class = GetUserNetPublicSerializer
+    permission_classes = [permissions.AllowAny]
 
 
 class UserNetView(ModelViewSet):
