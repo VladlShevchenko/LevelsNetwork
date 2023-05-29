@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'djoser',
     'src.profiles',
     'src.followers',
+    'src.wall',
     'src.feed'
 ]
 
