@@ -5,8 +5,6 @@ from .services import feed_service
 
 
 class FeedView(viewsets.GenericViewSet):
-    """ View follower`s feed
-    """
     permission_classes = [permissions.IsAuthenticated]
     serializer_class = ListPostSerializer
 

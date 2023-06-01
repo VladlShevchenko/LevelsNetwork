@@ -5,8 +5,6 @@ from .serializers import ListFollowerSerializer
 
 
 class ListFollowerView(generics.ListAPIView):
-    """ List of user followers
-    """
     permission_classes = [permissions.IsAuthenticated]
     serializer_class = ListFollowerSerializer
 
@@ -15,8 +13,6 @@ class ListFollowerView(generics.ListAPIView):
 
 
 class FollowerView(views.APIView):
-    """ Add follower
-    """
     permission_classes = [permissions.IsAuthenticated]
 
     def post(self, request, pk):
