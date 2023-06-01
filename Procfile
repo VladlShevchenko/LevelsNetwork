@@ -1,1 +1,1 @@
-web: gunicorn levelsnetwork.wsgi:application --log-file -
+web: gunicorn LevelsNetwork.wsgi:application --log-file -
