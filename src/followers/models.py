@@ -3,7 +3,6 @@ from django.db import models
 
 
 class Follower(models.Model):
-    """Followers model"""
     user = models.ForeignKey(
         settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='owner'
     )
