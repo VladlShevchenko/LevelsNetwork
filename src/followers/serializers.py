@@ -13,7 +13,6 @@ class ListFollowerSerializer(serializers.ModelSerializer):
 
 
 class AddAFollowerSerializer(serializers.Serializer):
-    """Add followers"""
-
+    pass
 
 
