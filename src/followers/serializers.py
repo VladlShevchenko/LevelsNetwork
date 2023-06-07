@@ -9,7 +9,7 @@ class ListFollowerSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Follower
-        fields = ('subscribers', 'follower_name')
+        fields = ('id', 'subscribers', 'subscriber')
 
 
 class AddAFollowerSerializer(serializers.Serializer):

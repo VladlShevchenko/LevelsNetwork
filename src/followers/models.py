@@ -9,7 +9,6 @@ class Follower(models.Model):
     subscriber = models.ForeignKey(
         settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name='subscribers'
     )
-    follower_name = subscriber.username
 
     def __str__(self):
         return f'Username: {self.subscriber.username}'
