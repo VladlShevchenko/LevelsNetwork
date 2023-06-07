@@ -14,7 +14,16 @@ from pathlib import Path
 import os
 import django_heroku
 import dj_database_url
-
+os.environ['DEBUG'] = '1'
+os.environ['SECRET_KEY'] = 'fdsadqw3f32wg<43g3hv$%#@%F$F$$F$F'
+os.environ['DJANGO_ALLOWED_HOSTS'] = '*'
+os.environ['POSTGRES_ENGINE'] = 'django.db.backends.postgresql'
+os.environ['POSTGRES_DB'] = 'neondb'
+os.environ['POSTGRES_USER'] = 'mayorovivankhm'
+os.environ['POSTGRES_PASSWORD'] = 'CKLgRJE79vcF'
+os.environ['POSTGRES_HOST'] = 'ep-sweet-waterfall-278180.eu-central-1.aws.neon.tech'
+os.environ['POSTGRES_PORT'] = '5432'
+os.environ['DATABASE'] = 'postgres'
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
